@@ -81,11 +81,23 @@
     {
       "atomType": "Import",
       "name": "Import",
-      "x": 0.39834881320949433,
-      "y": 0.6614906832298136,
+      "x": 0.3436532507739938,
+      "y": 0.6645962732919254,
       "uniqueID": "ef251229-51be-47d0-8d87-2a0385dfc513",
       "ioValues": [],
       "fileName": "Frailejon_3.svg",
+      "type": "SVG",
+      "repoOwner": "alzatin",
+      "repoName": "donut_5"
+    },
+    {
+      "atomType": "Import",
+      "name": "Import",
+      "x": 0.46542827657378744,
+      "y": 0.7204968944099379,
+      "uniqueID": "a408954b-34ca-40da-9e3b-fc606b1178d5",
+      "ioValues": [],
+      "fileName": "Frailejon_3-converted.svg",
       "type": "SVG",
       "repoOwner": "alzatin",
       "repoName": "donut_5"
