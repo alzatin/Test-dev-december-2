@@ -48,8 +48,8 @@
     {
       "atomType": "Gcode",
       "name": "Gcode",
-      "x": 0.82765737874097,
-      "y": 0.38509316770186336,
+      "x": 0.8596491228070176,
+      "y": 0.2670807453416149,
       "uniqueID": "d7bd044f-9afc-4440-9b3b-d7eb3488d3b6",
       "ioValues": [
         {
@@ -181,16 +181,16 @@
       "ioValues": [
         {
           "name": "height",
-          "ioValue": 0.3,
-          "currentEquation": ".3"
+          "ioValue": 0.1,
+          "currentEquation": ".1"
         }
       ]
     },
     {
       "atomType": "Export",
       "name": "Export",
-      "x": 0.6873065015479876,
-      "y": 0.35714285714285715,
+      "x": 0.6893704850361196,
+      "y": 0.34782608695652173,
       "uniqueID": "id-82",
       "ioValues": [
         {
@@ -266,10 +266,16 @@
       "ap2Name": "geometry",
       "ap1ID": "id-78",
       "ap2ID": "id-82"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-78",
+      "ap2ID": "d3e25771-0f7c-4215-a122-f7c1045f96fc"
     }
   ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
-  "compiledBom": {},
+  "compiledBom": [],
   "filetypeVersion": 1
 }
