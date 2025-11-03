@@ -86,13 +86,14 @@
       "fileName": "Frailejon_3-converted.svg",
       "type": "SVG",
       "repoOwner": "alzatin",
-      "repoName": "donut_5"
+      "repoName": "donut_5",
+      "SVGwidth": 100
     },
     {
       "atomType": "Extrude",
       "name": "Extrude",
-      "x": 0.4189886480908153,
-      "y": 0.8509316770186335,
+      "x": 0.413828689370485,
+      "y": 0.8540372670807453,
       "uniqueID": "7eec2c54-9160-4320-a722-db0906e97032",
       "ioValues": [
         {
@@ -187,7 +188,8 @@
           "fileName": "cow2-converted.svg",
           "type": "SVG",
           "repoOwner": "alzatin",
-          "repoName": "donut_5"
+          "repoName": "donut_5",
+          "SVGwidth": 10
         },
         {
           "atomType": "Extrude",
