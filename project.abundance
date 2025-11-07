@@ -162,39 +162,17 @@
       ]
     },
     {
-      "atomType": "Molecule",
-      "name": "New Molecule",
-      "x": 0.43154362416107384,
-      "y": 0.2391304347826087,
-      "uniqueID": "id-148",
+      "atomType": "Import",
+      "name": "Import",
+      "x": 0.36845637583892615,
+      "y": 0.40062111801242234,
+      "uniqueID": "id-200",
       "ioValues": [],
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "name": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-150",
-          "ioValues": []
-        },
-        {
-          "atomType": "Import",
-          "name": "Import",
-          "x": 0.34697986577181206,
-          "y": 0.46894409937888204,
-          "uniqueID": "id-152",
-          "ioValues": [],
-          "fileName": "31162712.svg",
-          "type": "SVG",
-          "repoOwner": "alzatin",
-          "repoName": "donut_5",
-          "SVGwidth": 10
-        }
-      ],
-      "allConnectors": [],
-      "fileTypeVersion": 1,
-      "compiledBom": {}
+      "fileName": "31162712_copy1.svg",
+      "type": "SVG",
+      "repoOwner": "alzatin",
+      "repoName": "donut_5",
+      "SVGwidth": 10
     }
   ],
   "allConnectors": [
