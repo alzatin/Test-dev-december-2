@@ -6,11 +6,5 @@
 
 
 
- Done 
-
-![readme](/readmeid-68.svg)
-
-
-
-
+ 
 

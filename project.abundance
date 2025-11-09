@@ -18,8 +18,8 @@
     {
       "atomType": "Rectangle",
       "name": "Rectangle",
-      "x": 0.15583075335397317,
-      "y": 0.4161490683229814,
+      "x": 0.2554890219560878,
+      "y": 0.4409937888198758,
       "uniqueID": "1b9e4495-2958-490f-b191-17e032057477",
       "ioValues": [
         {
@@ -33,92 +33,30 @@
       ]
     },
     {
-      "atomType": "Extrude",
-      "name": "Extrude",
-      "x": 0.5288590604026846,
-      "y": 0.21428571428571427,
-      "uniqueID": "89f5ea0e-101f-45dc-98f6-3d8e4cb8af95",
+      "atomType": "Circle",
+      "name": "Circle",
+      "x": 0.21956087824351297,
+      "y": 0.8291925465838509,
+      "uniqueID": "id-97",
       "ioValues": [
         {
-          "name": "height",
-          "ioValue": 10
+          "name": "diameter",
+          "ioValue": 30,
+          "currentEquation": "30"
         }
       ]
-    },
-    {
-      "atomType": "Import",
-      "name": "Import",
-      "x": 0.1268456375838926,
-      "y": 0.7888198757763976,
-      "uniqueID": "a408954b-34ca-40da-9e3b-fc606b1178d5",
-      "ioValues": [],
-      "fileName": "Frailejon_3-converted.svg",
-      "type": "SVG",
-      "repoOwner": "alzatin",
-      "repoName": "donut_5",
-      "SVGwidth": 100
-    },
-    {
-      "atomType": "Extrude",
-      "name": "Extrude",
-      "x": 0.41208053691275165,
-      "y": 0.8757763975155279,
-      "uniqueID": "7eec2c54-9160-4320-a722-db0906e97032",
-      "ioValues": [
-        {
-          "name": "height",
-          "ioValue": 10
-        }
-      ]
-    },
-    {
-      "atomType": "Rectangle",
-      "name": "Rectangle",
-      "x": 0.29411764705882354,
-      "y": 0.6242236024844721,
-      "uniqueID": "id-21",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 30
-        },
-        {
-          "name": "y length",
-          "ioValue": 30
-        }
-      ]
-    },
-    {
-      "atomType": "Extrude",
-      "name": "Extrude",
-      "x": 0.4958371877890842,
-      "y": 0.49689440993788814,
-      "uniqueID": "id-25",
-      "ioValues": [
-        {
-          "name": "height",
-          "ioValue": 5
-        }
-      ]
-    },
-    {
-      "atomType": "Difference",
-      "name": "Difference",
-      "x": 0.7604790419161676,
-      "y": 0.49689440993788814,
-      "uniqueID": "id-29",
-      "ioValues": []
     },
     {
       "atomType": "Move",
       "name": "Move",
-      "x": 0.5536912751677852,
-      "y": 0.7267080745341615,
-      "uniqueID": "id-33",
+      "x": 0.43812375249500995,
+      "y": 0.8664596273291926,
+      "uniqueID": "id-100",
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": 0
+          "ioValue": 30,
+          "currentEquation": "30"
         },
         {
           "name": "yDist",
@@ -126,69 +64,57 @@
         },
         {
           "name": "zDist",
-          "ioValue": 5
+          "ioValue": 19,
+          "currentEquation": "19"
         }
       ]
     },
     {
-      "atomType": "Readme",
-      "name": "README",
-      "x": 0.7715078630897317,
-      "y": 0.3012422360248447,
-      "uniqueID": "id-68",
-      "ioValues": [],
-      "readMeText": "Done",
-      "global": true
+      "atomType": "Difference",
+      "name": "Difference",
+      "x": 0.5758483033932136,
+      "y": 0.32919254658385094,
+      "uniqueID": "id-106",
+      "ioValues": []
+    },
+    {
+      "atomType": "Extrude",
+      "name": "Extrude",
+      "x": 0.7724550898203593,
+      "y": 0.47204968944099385,
+      "uniqueID": "id-110",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
     }
   ],
   "allConnectors": [
     {
       "ap1Name": "geometry",
-      "ap2Name": "geometry",
+      "ap2Name": "geometry2",
       "ap1ID": "1b9e4495-2958-490f-b191-17e032057477",
-      "ap2ID": "89f5ea0e-101f-45dc-98f6-3d8e4cb8af95"
+      "ap2ID": "id-106"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "id-97",
+      "ap2ID": "id-100"
     },
     {
       "ap1Name": "geometry",
       "ap2Name": "geometry1",
-      "ap1ID": "89f5ea0e-101f-45dc-98f6-3d8e4cb8af95",
-      "ap2ID": "id-29"
-    },
-    {
-      "ap1Name": "output",
-      "ap2Name": "geometry",
-      "ap1ID": "a408954b-34ca-40da-9e3b-fc606b1178d5",
-      "ap2ID": "7eec2c54-9160-4320-a722-db0906e97032"
+      "ap1ID": "id-100",
+      "ap2ID": "id-106"
     },
     {
       "ap1Name": "geometry",
       "ap2Name": "geometry",
-      "ap1ID": "id-21",
-      "ap2ID": "id-25"
-    },
-    {
-      "ap1Name": "geometry",
-      "ap2Name": "geometry",
-      "ap1ID": "id-25",
-      "ap2ID": "id-33"
-    },
-    {
-      "ap1Name": "geometry",
-      "ap2Name": "geometry",
-      "ap1ID": "id-25",
-      "ap2ID": "id-68"
-    },
-    {
-      "ap1Name": "geometry",
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-29",
-      "ap2ID": "d3e25771-0f7c-4215-a122-f7c1045f96fc"
-    },
-    {
-      "ap1Name": "geometry",
-      "ap2Name": "geometry2",
-      "ap1ID": "id-33",
-      "ap2ID": "id-29"
+      "ap1ID": "id-106",
+      "ap2ID": "id-110"
     }
   ],
   "unitsKey": "MM",
