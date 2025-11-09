@@ -104,8 +104,8 @@
     {
       "atomType": "Difference",
       "name": "Difference",
-      "x": 0.6899328859060403,
-      "y": 0.7111801242236025,
+      "x": 0.7604790419161676,
+      "y": 0.49689440993788814,
       "uniqueID": "id-29",
       "ioValues": []
     },
@@ -177,6 +177,12 @@
       "ap2Name": "geometry",
       "ap1ID": "id-25",
       "ap2ID": "id-68"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-29",
+      "ap2ID": "d3e25771-0f7c-4215-a122-f7c1045f96fc"
     },
     {
       "ap1Name": "geometry",
