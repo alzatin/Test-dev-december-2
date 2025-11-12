@@ -113,14 +113,14 @@
     {
       "atomType": "Gcode",
       "name": "Gcode",
-      "x": 0.7530266343825666,
-      "y": 0.7888198757763976,
+      "x": 0.7489911218724777,
+      "y": 0.8229813664596274,
       "uniqueID": "id-160",
       "ioValues": [
         {
           "name": "Tool Size",
-          "ioValue": 0.25,
-          "currentEquation": ".25"
+          "ioValue": 1,
+          "currentEquation": "1"
         },
         {
           "name": "Passes",
