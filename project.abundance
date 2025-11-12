@@ -18,8 +18,8 @@
     {
       "atomType": "Rectangle",
       "name": "Rectangle",
-      "x": 0.2614770459081836,
-      "y": 0.4472049689440994,
+      "x": 0.24899328859060402,
+      "y": 0.48757763975155277,
       "uniqueID": "1b9e4495-2958-490f-b191-17e032057477",
       "ioValues": [
         {
@@ -35,8 +35,8 @@
     {
       "atomType": "Circle",
       "name": "Circle",
-      "x": 0.21956087824351297,
-      "y": 0.8291925465838509,
+      "x": 0.20067114093959731,
+      "y": 0.8540372670807453,
       "uniqueID": "id-97",
       "ioValues": [
         {
@@ -48,8 +48,8 @@
     {
       "atomType": "Move",
       "name": "Move",
-      "x": 0.4461077844311377,
-      "y": 0.8385093167701863,
+      "x": 0.36642453591606133,
+      "y": 0.7142857142857143,
       "uniqueID": "id-100",
       "ioValues": [
         {
@@ -62,23 +62,24 @@
         },
         {
           "name": "zDist",
-          "ioValue": 19
+          "ioValue": 3,
+          "currentEquation": "3"
         }
       ]
     },
     {
       "atomType": "Difference",
       "name": "Difference",
-      "x": 0.5848303393213573,
-      "y": 0.3136645962732919,
+      "x": 0.4334140435835351,
+      "y": 0.27639751552795033,
       "uniqueID": "id-106",
       "ioValues": []
     },
     {
       "atomType": "Extrude",
       "name": "Extrude",
-      "x": 0.6736526946107785,
-      "y": 0.5372670807453416,
+      "x": 0.5665859564164649,
+      "y": 0.19254658385093168,
       "uniqueID": "id-110",
       "ioValues": [
         {
@@ -90,23 +91,57 @@
     {
       "atomType": "Extrude",
       "name": "Extrude",
-      "x": 0.56187624750499,
-      "y": 0.8043478260869565,
+      "x": 0.5020177562550444,
+      "y": 0.7639751552795032,
       "uniqueID": "id-130",
       "ioValues": [
         {
           "name": "height",
-          "ioValue": 60
+          "ioValue": 10,
+          "currentEquation": "10"
         }
       ]
     },
     {
       "atomType": "Difference",
       "name": "Difference",
-      "x": 0.842374616171955,
-      "y": 0.7857142857142857,
+      "x": 0.6561743341404358,
+      "y": 0.47204968944099385,
       "uniqueID": "id-134",
       "ioValues": []
+    },
+    {
+      "atomType": "Gcode",
+      "name": "Gcode",
+      "x": 0.7530266343825666,
+      "y": 0.7888198757763976,
+      "uniqueID": "id-160",
+      "ioValues": [
+        {
+          "name": "Tool Size",
+          "ioValue": 0.25,
+          "currentEquation": ".25"
+        },
+        {
+          "name": "Passes",
+          "ioValue": 5,
+          "currentEquation": "5"
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Molecule"
+        }
+      ],
+      "partName": "Molecule",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -157,9 +192,15 @@
       "ap2Name": "geometry1",
       "ap1ID": "id-130",
       "ap2ID": "id-134"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "id-134",
+      "ap2ID": "id-160"
     }
   ],
-  "unitsKey": "MM",
+  "unitsKey": "Inches",
   "fileTypeVersion": 1,
   "compiledBom": [],
   "filetypeVersion": 1
