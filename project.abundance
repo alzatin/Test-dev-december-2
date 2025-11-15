@@ -24,13 +24,11 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 20,
-          "currentEquation": "20"
+          "ioValue": 20
         },
         {
           "name": "y length",
-          "ioValue": 20,
-          "currentEquation": "20"
+          "ioValue": 20
         }
       ]
     },
@@ -43,8 +41,7 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "yDist",
@@ -120,13 +117,11 @@
       "ioValues": [
         {
           "name": "Tool Size",
-          "ioValue": 1,
-          "currentEquation": "1"
+          "ioValue": 1
         },
         {
           "name": "Passes",
-          "ioValue": 5,
-          "currentEquation": "5"
+          "ioValue": 5
         },
         {
           "name": "Speed",
@@ -153,15 +148,38 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 30,
-          "currentEquation": "30"
+          "ioValue": 30
         },
         {
           "name": "y length",
-          "ioValue": 30,
-          "currentEquation": "30"
+          "ioValue": 30
         }
       ]
+    },
+    {
+      "atomType": "Export",
+      "name": "Export",
+      "x": 0.6748612212529738,
+      "y": 0.782608695652174,
+      "uniqueID": "id-274",
+      "ioValues": [
+        {
+          "name": "File Type",
+          "ioValue": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Molecule"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Molecule"
     }
   ],
   "allConnectors": [
@@ -206,6 +224,12 @@
       "ap2Name": "geometry",
       "ap1ID": "id-199",
       "ap2ID": "id-203"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "id-199",
+      "ap2ID": "id-274"
     },
     {
       "ap1Name": "geometry",
