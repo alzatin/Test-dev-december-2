@@ -1,23 +1,19 @@
 {
   "atomType": "Molecule",
-  "name": "Molecule",
   "x": 0,
   "y": 0,
   "uniqueID": "01e278b0-4910-484c-bdc0-8458b001eb66",
-  "ioValues": [],
+  "name": "Molecule",
   "topLevel": true,
   "allAtoms": [
     {
       "atomType": "Output",
-      "name": "Output",
       "x": 0.98,
       "y": 0.5,
-      "uniqueID": "d3e25771-0f7c-4215-a122-f7c1045f96fc",
-      "ioValues": []
+      "uniqueID": "d3e25771-0f7c-4215-a122-f7c1045f96fc"
     },
     {
       "atomType": "Rectangle",
-      "name": "Rectangle",
       "x": 0.176050753370341,
       "y": 0.3695652173913043,
       "uniqueID": "1b9e4495-2958-490f-b191-17e032057477",
@@ -34,7 +30,6 @@
     },
     {
       "atomType": "Move",
-      "name": "Move",
       "x": 0.35448057097541635,
       "y": 0.7888198757763976,
       "uniqueID": "id-100",
@@ -55,7 +50,6 @@
     },
     {
       "atomType": "Extrude",
-      "name": "Extrude",
       "x": 0.5408406026962729,
       "y": 0.7204968944099379,
       "uniqueID": "id-110",
@@ -68,7 +62,6 @@
     },
     {
       "atomType": "Extrude",
-      "name": "Extrude",
       "x": 0.3909595559080095,
       "y": 0.2888198757763975,
       "uniqueID": "id-130",
@@ -81,7 +74,6 @@
     },
     {
       "atomType": "Move",
-      "name": "Move",
       "x": 0.5368754956383822,
       "y": 0.3167701863354037,
       "uniqueID": "id-193",
@@ -102,17 +94,14 @@
     },
     {
       "atomType": "Difference",
-      "name": "Difference",
       "x": 0.6445959104186952,
       "y": 0.42857142857142855,
-      "uniqueID": "id-199",
-      "ioValues": []
+      "uniqueID": "id-199"
     },
     {
       "atomType": "Gcode",
-      "name": "Gcode",
-      "x": 0.7857838364167479,
-      "y": 0.6801242236024845,
+      "x": 0.7857142857142857,
+      "y": 0.7111801242236025,
       "uniqueID": "id-203",
       "ioValues": [
         {
@@ -141,7 +130,6 @@
     },
     {
       "atomType": "Rectangle",
-      "name": "Rectangle",
       "x": 0.20777160983346551,
       "y": 0.8757763975155279,
       "uniqueID": "id-238",
@@ -158,7 +146,6 @@
     },
     {
       "atomType": "Export",
-      "name": "Export",
       "x": 0.6748612212529738,
       "y": 0.782608695652174,
       "uniqueID": "id-274",
@@ -184,55 +171,46 @@
   ],
   "allConnectors": [
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "1b9e4495-2958-490f-b191-17e032057477",
       "ap2ID": "id-130"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "id-100",
       "ap2ID": "id-110"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry1",
       "ap1ID": "id-110",
       "ap2ID": "id-199"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "id-130",
       "ap2ID": "id-193"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry2",
       "ap1ID": "id-193",
       "ap2ID": "id-199"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "number or geometry",
       "ap1ID": "id-199",
       "ap2ID": "d3e25771-0f7c-4215-a122-f7c1045f96fc"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "id-199",
       "ap2ID": "id-203"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "id-199",
       "ap2ID": "id-274"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "id-238",
       "ap2ID": "id-100"
@@ -240,6 +218,5 @@
   ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
-  "compiledBom": [],
   "filetypeVersion": 1
 }
