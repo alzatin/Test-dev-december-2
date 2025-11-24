@@ -62,8 +62,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.3909595559080095,
-      "y": 0.2888198757763975,
+      "x": 0.3903281519861831,
+      "y": 0.3012422360248447,
       "uniqueID": "id-130",
       "ioValues": [
         {
@@ -106,8 +106,7 @@
       "ioValues": [
         {
           "name": "Tool Size",
-          "ioValue": 0.25,
-          "currentEquation": ".25"
+          "ioValue": 0.25
         },
         {
           "name": "Passes",
@@ -168,6 +167,37 @@
       "resolution": 96,
       "importIndex": 0,
       "partName": "Molecule"
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.7357512953367876,
+      "y": 0.21428571428571427,
+      "uniqueID": "id-314",
+      "ioValues": [
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 2,
+          "currentEquation": "2"
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Molecule"
+        }
+      ],
+      "partName": "Molecule",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -190,6 +220,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-130",
       "ap2ID": "id-193"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-130",
+      "ap2ID": "id-314"
     },
     {
       "ap2Name": "geometry2",
