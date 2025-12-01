@@ -7,7 +7,7 @@
   "ioValues": [
     {
       "name": "wood",
-      "ioValue": 10
+      "ioValue": 0
     }
   ],
   "topLevel": true,
@@ -30,7 +30,7 @@
         },
         {
           "name": "y length",
-          "ioValue": 10
+          "ioValue": 0
         }
       ]
     },
@@ -128,7 +128,8 @@
         },
         {
           "name": "Part Name",
-          "ioValue": "Molecule"
+          "ioValue": "Molecule",
+          "currentEquation": "Molecule"
         }
       ],
       "partName": "Molecule",
@@ -158,7 +159,8 @@
       "ioValues": [
         {
           "name": "File Type",
-          "ioValue": "STL"
+          "ioValue": "STL",
+          "currentEquation": "STL"
         },
         {
           "name": "Resolution (dpi)",
@@ -166,7 +168,8 @@
         },
         {
           "name": "Part Name",
-          "ioValue": "Molecule"
+          "ioValue": "Molecule",
+          "currentEquation": "Molecule"
         }
       ],
       "type": null,
@@ -198,7 +201,8 @@
         },
         {
           "name": "Part Name",
-          "ioValue": "Molecule"
+          "ioValue": "Molecule",
+          "currentEquation": "Molecule"
         }
       ],
       "partName": "Molecule",
