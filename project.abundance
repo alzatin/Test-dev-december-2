@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "wood",
-      "ioValue": 5
+      "ioValue": 10,
+      "currentEquation": "10"
     },
     {
       "name": "plastic",
@@ -25,7 +26,7 @@
     {
       "atomType": "Input",
       "x": 0.0264,
-      "y": 0.16,
+      "y": 0.7391304347826086,
       "uniqueID": "id-366",
       "name": "wood",
       "type": "number"
@@ -40,13 +41,13 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.38868613138686137,
+      "x": 0.39324817518248173,
       "y": 0.515527950310559,
-      "uniqueID": "id-409",
+      "uniqueID": "id-420",
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 5,
+          "ioValue": 10,
           "currentEquation": "wood"
         },
         {
