@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "wood",
-      "ioValue": 5,
-      "currentEquation": "5"
+      "ioValue": 5
     }
   ],
   "topLevel": true,
@@ -139,13 +138,13 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.20777160983346551,
-      "y": 0.8757763975155279,
+      "x": 0.283448275862069,
+      "y": 0.8477011494252873,
       "uniqueID": "id-238",
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 30
+          "ioValue": 0
         },
         {
           "name": "y length",
@@ -267,8 +266,8 @@
     },
     {
       "atomType": "Constant",
-      "x": 0.08896551724137931,
-      "y": 0.7758620689655172,
+      "x": 0.08413793103448276,
+      "y": 0.7787356321839081,
       "uniqueID": "id-585",
       "value": 0
     }
@@ -343,6 +342,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-470",
       "ap2ID": "id-130"
+    },
+    {
+      "ap2Name": "x length",
+      "ap1ID": "id-585",
+      "ap2ID": "id-238"
     }
   ],
   "unitsKey": "MM",
