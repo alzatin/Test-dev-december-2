@@ -7,8 +7,8 @@
   "ioValues": [
     {
       "name": "wood",
-      "ioValue": 5,
-      "currentEquation": "5"
+      "ioValue": 10,
+      "currentEquation": "10"
     }
   ],
   "topLevel": true,
@@ -21,8 +21,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.05862068965517241,
-      "y": 0.4051724137931034,
+      "x": 0.16383616383616384,
+      "y": 0.38819875776397517,
       "uniqueID": "1b9e4495-2958-490f-b191-17e032057477",
       "ioValues": [
         {
@@ -31,19 +31,19 @@
         },
         {
           "name": "y length",
-          "ioValue": 5
+          "ioValue": 10
         }
       ]
     },
     {
       "atomType": "Move",
-      "x": 0.4193103448275862,
-      "y": 0.793103448275862,
+      "x": 0.356551724137931,
+      "y": 0.7758620689655172,
       "uniqueID": "id-100",
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": -3
+          "ioValue": 0
         },
         {
           "name": "yDist",
@@ -70,13 +70,13 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.283448275862069,
-      "y": 0.27586206896551724,
+      "x": 0.28271728271728275,
+      "y": 0.2981366459627329,
       "uniqueID": "id-130",
       "ioValues": [
         {
           "name": "height",
-          "ioValue": 5
+          "ioValue": 8
         }
       ]
     },
@@ -139,8 +139,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.283448275862069,
-      "y": 0.8477011494252873,
+      "x": 0.2837162837162837,
+      "y": 0.8540372670807453,
       "uniqueID": "id-238",
       "ioValues": [
         {
@@ -149,8 +149,8 @@
         },
         {
           "name": "y length",
-          "ioValue": 30,
-          "currentEquation": "30"
+          "ioValue": 10,
+          "currentEquation": "wood"
         }
       ]
     },
@@ -250,8 +250,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.8517241379310345,
-      "y": 0.30459770114942525,
+      "x": 0.4510344827586207,
+      "y": 0.793103448275862,
       "uniqueID": "id-525",
       "ioValues": [
         {
@@ -273,52 +273,6 @@
       "uniqueID": "id-585",
       "name": "7",
       "value": 5
-    },
-    {
-      "atomType": "Circle",
-      "x": 0.18137931034482757,
-      "y": 0.7241379310344828,
-      "uniqueID": "id-645",
-      "ioValues": [
-        {
-          "name": "diameter",
-          "ioValue": 10
-        }
-      ]
-    },
-    {
-      "atomType": "Rectangle",
-      "x": 0.2482758620689655,
-      "y": 0.7902298850574713,
-      "uniqueID": "id-648",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 10,
-          "currentEquation": "10"
-        },
-        {
-          "name": "y length",
-          "ioValue": 10,
-          "currentEquation": "10"
-        }
-      ]
-    },
-    {
-      "atomType": "Rectangle",
-      "x": 0.7324137931034482,
-      "y": 0.8390804597701149,
-      "uniqueID": "id-652",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 35
-        },
-        {
-          "name": "y length",
-          "ioValue": 10
-        }
-      ]
     }
   ],
   "allConnectors": [
