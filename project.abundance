@@ -8,10 +8,6 @@
     {
       "name": "wood",
       "ioValue": 1
-    },
-    {
-      "name": "Input (1)",
-      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -40,8 +36,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.35673930589184827,
-      "y": 0.5186335403726707,
+      "x": 0.35448057097541635,
+      "y": 0.7888198757763976,
       "uniqueID": "id-100",
       "ioValues": [
         {
@@ -141,8 +137,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.19395973154362414,
-      "y": 0.6645962732919254,
+      "x": 0.20777160983346551,
+      "y": 0.8757763975155279,
       "uniqueID": "id-238",
       "ioValues": [
         {
@@ -219,44 +215,6 @@
       "uniqueID": "id-361",
       "name": "wood",
       "type": "number"
-    },
-    {
-      "atomType": "Input",
-      "x": 0.0264,
-      "y": 0.256,
-      "uniqueID": "id-463",
-      "name": "Input (1)",
-      "type": "number"
-    },
-    {
-      "atomType": "Molecule",
-      "x": 0.3058918482647296,
-      "y": 0.8012422360248447,
-      "uniqueID": "id-514",
-      "name": "Molecule",
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-516"
-        },
-        {
-          "atomType": "Circle",
-          "x": 0.3099273607748184,
-          "y": 0.6149068322981366,
-          "uniqueID": "id-518",
-          "ioValues": [
-            {
-              "name": "diameter",
-              "ioValue": 10
-            }
-          ]
-        }
-      ],
-      "allConnectors": [],
-      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
