@@ -36,8 +36,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.36510067114093964,
-      "y": 0.3012422360248447,
+      "x": 0.36241610738255037,
+      "y": 0.3385093167701863,
       "uniqueID": "id-130",
       "ioValues": [
         {
@@ -104,37 +104,9 @@
       "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane).extrude(4)\nlet cube = replicad.drawRoundedRectangle(5, 4, 1).sketchOnPlane(newPlane).extrude(1)\n\nlet cylObj = {\n  geometry: [cube],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
     },
     {
-      "atomType": "Rectangle",
-      "x": 0.26375838926174494,
-      "y": 0.65527950310559,
-      "uniqueID": "id-858",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 20
-        },
-        {
-          "name": "y length",
-          "ioValue": 5
-        }
-      ]
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.4281879194630872,
-      "y": 0.6428571428571428,
-      "uniqueID": "id-859",
-      "ioValues": [
-        {
-          "name": "height",
-          "ioValue": 5
-        }
-      ]
-    },
-    {
       "atomType": "Gcode",
-      "x": 0.5583892617449665,
-      "y": 0.7236024844720497,
+      "x": 0.5664429530201343,
+      "y": 0.7360248447204969,
       "uniqueID": "id-860",
       "ioValues": [
         {
@@ -179,109 +151,6 @@
       ],
       "codeVersion": 1,
       "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane).extrude(4)\nlet cube = replicad.drawRoundedRectangle(5, 4, 1).sketchOnPlane(newPlane).extrude(1)\n\nlet cylObj = {\n  geometry: [cube],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
-    },
-    {
-      "atomType": "Molecule",
-      "x": 0.32617449664429526,
-      "y": 0.4937888198757764,
-      "uniqueID": "id-939",
-      "name": "Molecule",
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-941"
-        },
-        {
-          "atomType": "Rectangle",
-          "x": 0.23758389261744967,
-          "y": 0.8167701863354037,
-          "uniqueID": "id-952",
-          "ioValues": [
-            {
-              "name": "x length",
-              "ioValue": 20
-            },
-            {
-              "name": "y length",
-              "ioValue": 5
-            }
-          ]
-        },
-        {
-          "atomType": "Extrude",
-          "x": 0.4436241610738255,
-          "y": 0.33540372670807456,
-          "uniqueID": "id-953",
-          "ioValues": [
-            {
-              "name": "height",
-              "ioValue": 5
-            }
-          ]
-        },
-        {
-          "atomType": "Code",
-          "x": 0.6969798657718121,
-          "y": 0.7947204968944099,
-          "uniqueID": "id-955",
-          "ioValues": [
-            {
-              "name": "radius",
-              "ioValue": 5
-            },
-            {
-              "name": "height",
-              "ioValue": 10
-            }
-          ],
-          "codeVersion": 1,
-          "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane).extrude(4)\nlet cube = replicad.drawRoundedRectangle(5, 4, 1).sketchOnPlane(newPlane).extrude(1)\n\nlet cylObj = {\n  geometry: [cube],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
-        },
-        {
-          "atomType": "Rectangle",
-          "x": 0.3429530201342282,
-          "y": 0.6832298136645962,
-          "uniqueID": "id-1159",
-          "ioValues": [
-            {
-              "name": "x length",
-              "ioValue": 20
-            },
-            {
-              "name": "y length",
-              "ioValue": 5
-            }
-          ]
-        },
-        {
-          "atomType": "Extrude",
-          "x": 0.4758389261744967,
-          "y": 0.7329192546583851,
-          "uniqueID": "id-1163",
-          "ioValues": [
-            {
-              "name": "height",
-              "ioValue": 5
-            }
-          ]
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "shape",
-          "ap1ID": "id-953",
-          "ap2ID": "id-955"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-1159",
-          "ap2ID": "id-1163"
-        }
-      ],
-      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -304,21 +173,6 @@
       "ap2Name": "y length",
       "ap1ID": "id-361",
       "ap2ID": "1b9e4495-2958-490f-b191-17e032057477"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-858",
-      "ap2ID": "id-859"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-859",
-      "ap2ID": "id-860"
-    },
-    {
-      "ap2Name": "shape",
-      "ap1ID": "id-859",
-      "ap2ID": "id-861"
     }
   ],
   "unitsKey": "MM",
