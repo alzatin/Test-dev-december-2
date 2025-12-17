@@ -27,6 +27,10 @@
         {
           "name": "x length",
           "ioValue": 20
+        },
+        {
+          "name": "y length",
+          "ioValue": 5
         }
       ]
     },
