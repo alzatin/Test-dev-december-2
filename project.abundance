@@ -30,14 +30,15 @@
         },
         {
           "name": "y length",
-          "ioValue": 5
+          "ioValue": 50,
+          "currentEquation": "50"
         }
       ]
     },
     {
       "atomType": "Extrude",
-      "x": 0.44933333333333336,
-      "y": 0.3504531722054381,
+      "x": 0.33599999999999997,
+      "y": 0.7885196374622356,
       "uniqueID": "id-130",
       "ioValues": [
         {
@@ -86,32 +87,15 @@
       "type": "number"
     },
     {
-      "atomType": "Code",
-      "x": 0.6208053691275168,
-      "y": 0.2236024844720497,
-      "uniqueID": "id-835",
-      "ioValues": [
-        {
-          "name": "radius",
-          "ioValue": 5
-        },
-        {
-          "name": "height",
-          "ioValue": 10
-        }
-      ],
-      "codeVersion": 1,
-      "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane).extrude(4)\nlet cube = replicad.drawRoundedRectangle(5, 4, 1).sketchOnPlane(newPlane).extrude(1)\n\nlet cylObj = {\n  geometry: [cube],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
-    },
-    {
       "atomType": "Rectangle",
-      "x": 0.26375838926174494,
-      "y": 0.65527950310559,
+      "x": 0.212,
+      "y": 0.6918429003021148,
       "uniqueID": "id-858",
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 20
+          "ioValue": 20,
+          "currentEquation": "20"
         },
         {
           "name": "y length",
@@ -151,29 +135,41 @@
       "sortDirection": "Left"
     },
     {
-      "atomType": "Code",
-      "x": 0.6469798657718121,
-      "y": 0.84472049689441,
-      "uniqueID": "id-861",
+      "atomType": "Extrude",
+      "x": 0.4253472222222222,
+      "y": 0.4259818731117825,
+      "uniqueID": "id-903",
       "ioValues": [
-        {
-          "name": "radius",
-          "ioValue": 5
-        },
         {
           "name": "height",
           "ioValue": 10
         }
-      ],
+      ]
+    },
+    {
+      "atomType": "Code",
+      "x": 0.5729166666666667,
+      "y": 0.38368580060422963,
+      "uniqueID": "id-907",
       "codeVersion": 1,
-      "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane).extrude(4)\nlet cube = replicad.drawRoundedRectangle(5, 4, 1).sketchOnPlane(newPlane).extrude(1)\n\nlet cylObj = {\n  geometry: [cube],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
+      "code": "Inputs = [\n       {inputName: \"A\", type: \"geometry\", defaultValue: null},\n        {inputName: \"B\", type: \"geometry\", defaultValue: null}\n      ]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n\n      let boundsA = await GetBounds(A);\n      let A_minZ = boundsA.min[2];\n\n      let B_maxZ = 0;\n      if(B){\n          let boundsB = await GetBounds(B);\n          console.log(\"Bounding Box B:  \");\n          console.log(boundsB);\n          B_maxZ  = boundsB.max[2];\n      }\n\n     let translationZ = B_maxZ - A_minZ;\n     \n      let movedOutput = await Move(A, 0, 0, translationZ);\n\n      return movedOutput;"
     }
   ],
   "allConnectors": [
     {
       "ap2Name": "geometry",
+      "ap1ID": "1b9e4495-2958-490f-b191-17e032057477",
+      "ap2ID": "id-903"
+    },
+    {
+      "ap2Name": "geometry",
       "ap1ID": "id-858",
       "ap2ID": "id-130"
+    },
+    {
+      "ap2Name": "A",
+      "ap1ID": "id-903",
+      "ap2ID": "id-907"
     }
   ],
   "unitsKey": "MM",
