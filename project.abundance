@@ -7,7 +7,7 @@
   "ioValues": [
     {
       "name": "wood",
-      "ioValue": 10
+      "ioValue": 5
     }
   ],
   "topLevel": true,
@@ -20,8 +20,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.20266666666666666,
-      "y": 0.3595166163141994,
+      "x": 0.212751677852349,
+      "y": 0.34615384615384615,
       "uniqueID": "1b9e4495-2958-490f-b191-17e032057477",
       "ioValues": [
         {
@@ -36,8 +36,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.36510067114093964,
-      "y": 0.3012422360248447,
+      "x": 0.37315436241610733,
+      "y": 0.40384615384615385,
       "uniqueID": "id-130",
       "ioValues": [
         {
@@ -102,86 +102,30 @@
       ],
       "codeVersion": 1,
       "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane).extrude(4)\nlet cube = replicad.drawRoundedRectangle(5, 4, 1).sketchOnPlane(newPlane).extrude(1)\n\nlet cylObj = {\n  geometry: [cube],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
-    },
-    {
-      "atomType": "Rectangle",
-      "x": 0.26375838926174494,
-      "y": 0.65527950310559,
-      "uniqueID": "id-858",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 20
-        },
-        {
-          "name": "y length",
-          "ioValue": 5
-        }
-      ]
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.4281879194630872,
-      "y": 0.6428571428571428,
-      "uniqueID": "id-859",
-      "ioValues": [
-        {
-          "name": "height",
-          "ioValue": 5
-        }
-      ]
-    },
-    {
-      "atomType": "Gcode",
-      "x": 0.5583892617449665,
-      "y": 0.7236024844720497,
-      "uniqueID": "id-860",
-      "ioValues": [
-        {
-          "name": "Tool Size",
-          "ioValue": 6.35
-        },
-        {
-          "name": "Passes",
-          "ioValue": 2
-        },
-        {
-          "name": "Speed",
-          "ioValue": 1500
-        },
-        {
-          "name": "Cut Through",
-          "ioValue": 0.25
-        },
-        {
-          "name": "Part Name",
-          "ioValue": "Molecule",
-          "currentEquation": "Molecule"
-        }
-      ],
-      "partName": "Molecule",
-      "sortDirection": "Left"
-    },
-    {
-      "atomType": "Code",
-      "x": 0.6469798657718121,
-      "y": 0.84472049689441,
-      "uniqueID": "id-861",
-      "ioValues": [
-        {
-          "name": "radius",
-          "ioValue": 5
-        },
-        {
-          "name": "height",
-          "ioValue": 10
-        }
-      ],
-      "codeVersion": 1,
-      "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane).extrude(4)\nlet cube = replicad.drawRoundedRectangle(5, 4, 1).sketchOnPlane(newPlane).extrude(1)\n\nlet cylObj = {\n  geometry: [cube],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "1b9e4495-2958-490f-b191-17e032057477",
+      "ap2ID": "id-130"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-130",
+      "ap2ID": "id-314"
+    },
+    {
+      "ap2Name": "shape",
+      "ap1ID": "id-130",
+      "ap2ID": "id-835"
+    },
+    {
+      "ap2Name": "y length",
+      "ap1ID": "id-361",
+      "ap2ID": "1b9e4495-2958-490f-b191-17e032057477"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
