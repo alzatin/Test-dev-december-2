@@ -192,8 +192,8 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.23288590604026843,
-          "y": 0.7639751552795032,
+          "x": 0.23758389261744967,
+          "y": 0.8167701863354037,
           "uniqueID": "id-952",
           "ioValues": [
             {
@@ -208,8 +208,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.37583892617449666,
-          "y": 0.7515527950310559,
+          "x": 0.4436241610738255,
+          "y": 0.33540372670807456,
           "uniqueID": "id-953",
           "ioValues": [
             {
@@ -217,37 +217,6 @@
               "ioValue": 5
             }
           ]
-        },
-        {
-          "atomType": "Gcode",
-          "x": 0.6083892617449665,
-          "y": 0.6736024844720496,
-          "uniqueID": "id-954",
-          "ioValues": [
-            {
-              "name": "Tool Size",
-              "ioValue": 6.35
-            },
-            {
-              "name": "Passes",
-              "ioValue": 2
-            },
-            {
-              "name": "Speed",
-              "ioValue": 1500
-            },
-            {
-              "name": "Cut Through",
-              "ioValue": 0.25
-            },
-            {
-              "name": "Part Name",
-              "ioValue": "Molecule",
-              "currentEquation": "Molecule"
-            }
-          ],
-          "partName": "Molecule",
-          "sortDirection": "Left"
         },
         {
           "atomType": "Code",
@@ -269,9 +238,9 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.25973154362416107,
-          "y": 0.4316770186335404,
-          "uniqueID": "id-973",
+          "x": 0.3429530201342282,
+          "y": 0.6832298136645962,
+          "uniqueID": "id-1159",
           "ioValues": [
             {
               "name": "x length",
@@ -285,9 +254,9 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.42583892617449665,
-          "y": 0.7015527950310558,
-          "uniqueID": "id-1002",
+          "x": 0.4758389261744967,
+          "y": 0.7329192546583851,
+          "uniqueID": "id-1163",
           "ioValues": [
             {
               "name": "height",
@@ -298,19 +267,14 @@
       ],
       "allConnectors": [
         {
-          "ap2Name": "geometry",
-          "ap1ID": "id-952",
-          "ap2ID": "id-953"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-953",
-          "ap2ID": "id-954"
-        },
-        {
           "ap2Name": "shape",
           "ap1ID": "id-953",
           "ap2ID": "id-955"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1159",
+          "ap2ID": "id-1163"
         }
       ],
       "fileTypeVersion": 1
