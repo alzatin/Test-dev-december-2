@@ -57,7 +57,7 @@
           "ioValues": [
             {
               "name": "Wood",
-              "ioValue": 10
+              "ioValue": 9
             }
           ],
           "topLevel": false,
@@ -70,13 +70,13 @@
             },
             {
               "atomType": "Circle",
-              "x": 0.3351724137931034,
-              "y": 0.4655172413793103,
+              "x": 0.33793103448275863,
+              "y": 0.4626436781609195,
               "uniqueID": "id-1064",
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 10,
+                  "ioValue": 9,
                   "currentEquation": "Wood"
                 }
               ]
@@ -96,7 +96,7 @@
             {
               "atomType": "Input",
               "x": 0.0264,
-              "y": 0.4367816091954023,
+              "y": 0.4396551724137931,
               "uniqueID": "id-1076",
               "name": "Wood"
             }
@@ -118,7 +118,7 @@
         {
           "atomType": "Input",
           "x": 0.0264,
-          "y": 0.30459770114942525,
+          "y": 0.3074712643678161,
           "uniqueID": "id-1073",
           "name": "Wood"
         }
